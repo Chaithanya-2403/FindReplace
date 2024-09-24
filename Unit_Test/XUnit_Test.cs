@@ -6,8 +6,8 @@ namespace Unit_Test
 {
     public class XUnit_Test
     {
-        private readonly string _inputFilePath = "D:/input.txt"; // Replace your input file path
-        private readonly string _csvFilePath = "D:/output.csv"; // Replace your output file path
+        private readonly string _inputFilePath = "D:/input.txt";  // Replace your input file path
+        private readonly string _csvFilePath = "D:/output.csv";  // Replace your output file path
 
         [Fact]
         public void TestProcessAndReplaceTextFile_WordsReplacedCorrectly()
