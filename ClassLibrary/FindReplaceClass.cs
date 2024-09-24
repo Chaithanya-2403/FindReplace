@@ -50,7 +50,6 @@ namespace ClassLibrary
                     // Find word's start position (index) in the line
                     int wordPosition = line.IndexOf(words[wordIndex]);
 
-                    // Output word's position: Line number (1-based) and word's start position in the line (0-based)
                     Console.WriteLine($"Word: '{word}' | Line: {lineIndex + 1}, Position: {wordPosition}");
                 }
 
