@@ -9,6 +9,7 @@ namespace ConsoleAppforFindReplace
             // File paths
             Console.Write("Enter the input CSV file path: ");
             string textFilePath = Console.ReadLine();
+
             Console.Write("Enter the output TSV file path: ");
             string csvFilePath = Console.ReadLine();
 

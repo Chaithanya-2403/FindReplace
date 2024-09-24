@@ -52,9 +52,9 @@ namespace Unit_Test
         {
             // Arrange
             bool isMatched = false;
-            File.WriteAllText(_inputFilePath, fixtures.inputContent);
+            File.WriteAllText(_inputFilePath, fixtures.InputContent);
 
-            File.WriteAllText(_csvFilePath, fixtures.csvContent);
+            File.WriteAllText(_csvFilePath, fixtures.CsvContent);
             // Act
             var findReplaceList = FindReplaceClass.ReadFindReplacePairs(_csvFilePath);
             FindReplaceClass.ProcessTextFile(_inputFilePath, findReplaceList);
@@ -78,7 +78,7 @@ namespace Unit_Test
         {
             bool isCorrect = false;
             // Arrange
-            File.WriteAllText(_csvFilePath, fixtures.csvContent);
+            File.WriteAllText(_csvFilePath, fixtures.CsvContent);
 
             // Act
             var findReplaceList = FindReplaceClass.ReadFindReplacePairs(_csvFilePath);
