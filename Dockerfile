@@ -1,4 +1,4 @@
-# Use a base image for .NET runtime on Linux
+# Use a base image for .NET runtime on Linux 
 FROM mcr.microsoft.com/dotnet/runtime:6.0 AS runtime
 
 # Set the working directory inside the container
