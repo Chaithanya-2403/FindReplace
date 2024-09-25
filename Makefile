@@ -10,18 +10,14 @@ OUTPUT_DIR = bin
 # Default target
 all: build run
 
-# Build target
-build:
-	dotnet build -o $(OUTPUT_DIR)
-
 # Run target
 run: build
-    dotnet $(OUTPUT_DIR)/$(TARGET).dll
+	dotnet ConsoleAppforFindReplace.dll
 
 # Clean target
 clean:
-    dotnet clean
-    rm -rf $(OUTPUT_DIR)
+	dotnet clean
+	rm -rf $(OUTPUT_DIR)
 
 # Phony targets
 .PHONY: all build run clean
