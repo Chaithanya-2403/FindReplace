@@ -7,8 +7,11 @@ WORKDIR /app
 # Copy the published output from the host to the container
 COPY . .
 
-# Grant execution permissions to the application
+# Grant execution permissions to the application (if needed)
 RUN chmod +x ./ConsoleAppforFindReplace
 
-# Make the entry point for the app executable (Replace YourAppName with the actual app name)
-ENTRYPOINT ["./ConsoleAppforFindReplace"]
+# Ensure the data directory has the right permissions
+RUN mkdir -p /app/data && chmod -R 777 /app/data
+
+# Set the entry point for the application
+ENTRYPOINT ["dotnet", "ConsoleAppforFindReplace.dll"]
